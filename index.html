@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Kalkulator BMI</h1>
+      <p class="subtitle">Hitung Indeks Massa Tubuh kamu.</p>
+
+      <form id="bmi-form" novalidate>
+        <label>
+          Berat badan (kg)
+          <input
+            type="number"
+            id="weight"
+            step="0.1"
+            placeholder="contoh: 60"
+          />
+        </label>
+
+        <label>
+          Tinggi badan (cm)
+          <input
+            type="number"
+            id="height"
+            step="0.1"
+            placeholder="contoh: 170"
+          />
+        </label>
+
+        <p id="error" class="error" hidden></p>
+
+        <button type="submit">Hitung BMI</button>
+      </form>
+
+      <section id="result" class="result" hidden>
+        <p class="bmi-value" id="bmi-value"></p>
+        <p class="bmi-category" id="bmi-category"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
